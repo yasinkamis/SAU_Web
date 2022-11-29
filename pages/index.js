@@ -19,7 +19,7 @@ function UncontrolledExample() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://imgs.search.brave.com/Nenl6AfAdc1G-VUUwDdAiCS195eu0kCXcUA6pRwUv3U/rs:fit:1024:731:1/g:ce/aHR0cDovL3d3dy5t/b2RhcGl5ZXIuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE4/LzA5L3Jlc2ltLTEt/MTAyNHg3MzEuanBn"
+            src="https://imgs.search.brave.com/dt7c2zW8t9dvrz9gwf92rqSqr3vxBFmVpAvy1dM5U4I/rs:fit:1200:663:1/g:ce/aHR0cHM6Ly9pY2Ru/LmVuc29uaGFiZXIu/Y29tL3Jlc2ltbGVy/L2RpZ2VyL2tvay8y/MDIwLzA2LzAzL3Nv/eXV0XzMzMDQuanBn"
             alt="Second slide"
           />
 
@@ -31,7 +31,7 @@ function UncontrolledExample() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://imgs.search.brave.com/feDAHjqrpBcaMKirYmXAfRnKIv2YRS5e-UC0YpFaJ8w/rs:fit:640:494:1/g:ce/aHR0cHM6Ly93d3cu/ZHVueWFhdGxhc2ku/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzA5L3Jlc2lt/LXRhYmxvLW5hc2ls/LW9rdW51ci02NDB4/NDk0LmpwZw"
+            src="https://imgs.search.brave.com/dt7c2zW8t9dvrz9gwf92rqSqr3vxBFmVpAvy1dM5U4I/rs:fit:1200:663:1/g:ce/aHR0cHM6Ly9pY2Ru/LmVuc29uaGFiZXIu/Y29tL3Jlc2ltbGVy/L2RpZ2VyL2tvay8y/MDIwLzA2LzAzL3Nv/eXV0XzMzMDQuanBn"
             alt="Third slide"
           />
 
