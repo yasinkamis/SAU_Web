@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function UncontrolledExample() {
   return (
     <>
-      <button className="btn btn-primary my-5 mx-2 container-fluid">deneme</button>
+      <button className="btn btn-primary my-5 mx-2">deneme</button>
       <Carousel>
         <Carousel.Item>
           <img
