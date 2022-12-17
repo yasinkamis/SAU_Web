@@ -69,16 +69,16 @@ const HomePage = () => {
       </List>
       <Slider showIndicators={false}>
         <ImageWrapper>
+          <img src="https://www.sakarya.edu.tr/assets/img/banner/sausem.png" />
           <img src="https://www.sakarya.edu.tr/assets/img/banner/kutuphane.png" />
           <img src="https://www.sakarya.edu.tr/assets/img/banner/nasil-yaparim.png" />
-          <img src="https://www.sakarya.edu.tr/assets/img/banner/sausem.png" />
           <img src="https://www.sakarya.edu.tr/assets/img/banner/teknokent.png" />
         </ImageWrapper>
         <ImageWrapper>
-          <img src="https://www.sakarya.edu.tr/assets/img/banner/kutuphane.png" />
-          <img src="https://www.sakarya.edu.tr/assets/img/banner/nasil-yaparim.png" />
-          <img src="https://www.sakarya.edu.tr/assets/img/banner/sausem.png" />
           <img src="https://www.sakarya.edu.tr/assets/img/banner/teknokent.png" />
+          <img src="https://www.sakarya.edu.tr/assets/img/banner/sausem.png" />
+          <img src="https://www.sakarya.edu.tr/assets/img/banner/nasil-yaparim.png" />
+          <img src="https://www.sakarya.edu.tr/assets/img/banner/kutuphane.png" />
         </ImageWrapper>
       </Slider>
     </Wrapper>
