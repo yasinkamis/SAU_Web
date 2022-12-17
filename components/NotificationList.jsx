@@ -2,30 +2,26 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import MiniLogo from 'public/assets/mini_logo.png';
 
-const NotificationList = ({
-  title,
-  href,
-  date,
-  notificationTitle,
-  notificationText,
-}) => {
+const NotificationList = ({ data }) => {
   return (
     <Wrapper>
       <Title className="py-2 px-4">
-        <h6>{title}</h6>
-        <a href={href}>TÜM LİSTE</a>
+        <h6>{data[0]?.title}</h6>
+        <a href={data[0]?.href}>TÜM LİSTE</a>
       </Title>
       <Content className="py-3 px-4">
-        <List>
-          <ImageWrapper>
-            <Image src={MiniLogo} width={65} height={40} />
-            <DateArea>{date.slice(0, 6)}</DateArea>
-          </ImageWrapper>
-          <TextArea>
-            <h5>{notificationTitle}</h5>
-            <p>{notificationText}</p>
-          </TextArea>
-        </List>
+        {data[0]?.list?.map((item, idx) => (
+          <List key={idx} className="py-1">
+            <ImageWrapper>
+              <Image src={MiniLogo} width={65} height={40} />
+              <DateArea>{item.date.slice(0, 5)}</DateArea>
+            </ImageWrapper>
+            <TextArea>
+              <h5>{item.title}</h5>
+              <p>{item.description}</p>
+            </TextArea>
+          </List>
+        ))}
       </Content>
     </Wrapper>
   );
