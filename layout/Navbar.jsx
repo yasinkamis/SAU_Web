@@ -1,8 +1,8 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import { Pivot as Hamburger } from 'hamburger-react';
 import { NavLogo, Search } from 'components';
 import styled from 'styled-components';
-import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -22,10 +22,13 @@ const Navbar = () => {
         isOpen={isOpen}
       >
         <Hamburger toggled={isOpen} toggle={setOpen} size={16} color="#fff" />
-        <Link href="#">
+        <Link href="/">
+          <p>Anasayfa</p>
+        </Link>
+        <Link href="gallery">
           <p>Resim Galerisi</p>
         </Link>
-        <Link href="#">
+        <Link href="contact">
           <p>İletişim</p>
         </Link>
       </Menu>
@@ -37,7 +40,8 @@ export default Navbar;
 
 const Menu = styled.div`
   width: 100%;
-  background-color: #003a6a;
+  transition: all 0.5s ease;
+  background-color: ${p => (p.isOpen ? '#4883b3' : '#003a6a')};
   color: #fff !important;
   border-top: 1px solid #fff;
   overflow: hidden;
@@ -46,6 +50,9 @@ const Menu = styled.div`
     color: #fff;
     line-height: 50px;
     height: ${p => (p.isOpen ? '50px' : '0px')};
+    &:hover {
+      color: #003a6a;
+    }
   }
 `;
 
