@@ -11,7 +11,7 @@ const NavLogo = ({ footer }) => {
           footer ? 'd-flex align-items-end flex-column mx-3' : 'mx-3'
         }`}
       >
-        <h3>YASİN ÜNİVERSİTESİ</h3>
+        <h3>SAKARYA ÜNİVERSİTESİ</h3>
         <h5>Bilgisayar ve Bilişim Bilimleri Fakültesi</h5>
       </div>
     </Logo>

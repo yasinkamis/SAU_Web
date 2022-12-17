@@ -6,7 +6,7 @@ const Footer = () => {
     <FooterWrapper className="d-flex justify-content-center">
       <Content className="d-flex justify-content-between align-items-center">
         <Wrapper>
-          <p>© Yasin Üniversitesi Bilgisayar Araştırma ve Uygulama Merkezi</p>
+          <p>© Sakarya Üniversitesi Bilgisayar Araştırma ve Uygulama Merkezi</p>
         </Wrapper>
         <NavLogo footer />
       </Content>
@@ -23,6 +23,7 @@ const FooterWrapper = styled.footer`
   color: white;
   display: flex;
   justify-content: flex-end;
+  margin-top: 24px;
 `;
 
 const Content = styled.div`
