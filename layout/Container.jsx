@@ -1,11 +1,13 @@
 import Navbar from './Navbar';
 import styled from 'styled-components';
 import Footer from './Footer';
+import Breadcrumb from './Breadcrumb';
 
 const Container = ({ children }) => {
   return (
     <Wrapper className="d-flex flex-column align-items-center">
       <Navbar />
+      <Breadcrumb />
       <Content>{children}</Content>
       <Footer />
     </Wrapper>

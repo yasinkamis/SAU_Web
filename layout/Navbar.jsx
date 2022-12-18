@@ -1,11 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Pivot as Hamburger } from 'hamburger-react';
 import { NavLogo, Search } from 'components';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   return (
     <>
       <Nav className="d-flex justify-content-center">
@@ -25,8 +32,8 @@ const Navbar = () => {
         <Link href="/">
           <p>Anasayfa</p>
         </Link>
-        <Link href="gallery">
-          <p>Resim Galerisi</p>
+        <Link href="notice">
+          <p>Duyurular</p>
         </Link>
         <Link href="contact">
           <p>İletişim</p>

@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   .contact-form-wrapper {
-    padding: 100px 0;
+    padding: 0;
   }
   
   .contact-form {
